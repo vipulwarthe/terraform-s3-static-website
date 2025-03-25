@@ -199,6 +199,11 @@ Copy the link and paste it in your favourite browser.
 
 ![s4](https://github.com/mathesh-me/static-website-host-1/assets/144098846/f1908092-afeb-427b-a129-cc291275f4ae)
 
+5. Run the following command to destroy the infrastructure after done your demo :
+
+```
+terraform destroy -auto-approve
+```
 
 
 
