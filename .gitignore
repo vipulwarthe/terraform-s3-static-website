@@ -1,0 +1,28 @@
+# Terraform state files (store sensitive info)
+*.tfstate
+*.tfstate.backup
+
+# Terraform crash logs
+crash.log
+crash.*.log
+
+# Terraform execution plans
+*.tfplan
+
+# Terraform provider cache directory
+.terraform/
+
+# Terraform lock file (should not be shared across teams)
+.terraform.lock.hcl
+
+# Ignore override files (used for local modifications)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore logs & temporary files
+terraform.tfvars
+terraform.tfvars.json
+*.log
+*.bak
