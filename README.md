@@ -89,20 +89,13 @@ terraform init
 ```
 
 Running `terraform init` will install the necessary plugins and modules required for connecting to AWS and managing your infrastructure.<br>
-5. And then define __resource.tf__ file for creating bucket by using the below code :
 
-```
-resource "aws_s3_bucket" "website" {
-    bucket = "ml-books-static-site"
-  
-}
-```
-6. Then below command for creating the bucket :
+5. Then below command for creating the bucket :
 
 ```
 terraform apply -auto-approve
 ```
-7. And then add the below codes in __resource.tf__ file :
+6. And then add the below codes in __resource.tf__ file :
 ```
 # Create S3 Bucket
 resource "aws_s3_bucket" "website_bucket" {
@@ -173,13 +166,13 @@ POLICY
 }
 ```
 
-8. And then again run the command :
+7. And then again run the command :
 
 ```
 terraform apply -auto-approve
 ```
-9. The code above will apply the necessary configurations for features such as static website hosting, bucket policies, and blocking public access to your bucket.
-10. Certainly, it's important to customize the code to your specific needs. Please remember to change the bucket name, region, and configurations as per your requirements when using the code from the Terraform documentation.
+8. The code above will apply the necessary configurations for features such as static website hosting, bucket policies, and blocking public access to your bucket.
+9. Certainly, it's important to customize the code to your specific needs. Please remember to change the bucket name, region, and configurations as per your requirements when using the code from the Terraform documentation.
 
 ### Step 5: Define the Output file
 
