@@ -205,5 +205,26 @@ Copy the link and paste it in your favourite browser.
 terraform destroy -auto-approve
 ```
 
+6. How to push local Github repo into remote Github repo below are the step by step commands:
+
+```
+echo "# terraform-s3-static-website" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/vipulwarthe/terraform-s3-static-website.git
+git push -u origin main
+```
+
+If it is faild to push the commit into repo then use below commands:
+
+```
+git status
+git add .
+git commit -m "files added"
+git pull origin main --rebase         # use this command if faild to push commit
+git push -u origin main
+```
 
 
